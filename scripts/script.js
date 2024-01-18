@@ -2,15 +2,12 @@
     JS for etch-a-sketch
 */
 const container = document.querySelector("#container");
-container.style.display = "flex";
-container.style.flexWrap = "wrap";
+
 function createDiv(){
-    for(let i = 1; i <= 16; i++){
+    const number = 16*16;
+    for(let i = 1; i <= number; i++){
         const divVar = document.createElement("div");
-        divVar.style.width = "200px";
-        divVar.style.height = "200px";
-        divVar.style.backgroundColor = "aliceblue";
-        divVar.style.margin = "5px";
+        divVar.className = "gridBox";
         divVar.id = i;
         container.appendChild(divVar);
     }
