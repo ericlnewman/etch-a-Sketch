@@ -1,14 +1,21 @@
 /*
 CSS for etch-a-sketch
 */
-#container{
-    display: flex;
-    flex: 1, 1, 0;
+#container{    
     padding: 30px;
+}
+#btn{
+    margin-left: 50%;
+    margin-bottom: 30px;
+}
+#flex{
+    display: flex;
     flex-wrap: wrap;
 }
 .gridBox{
-    margin: 5px;
+    flex: 1, 1, 0;
+    flex-wrap: wrap;
+    flex-direction: column;
     height: 100px;
     width: 100px;
     background-color: aliceblue;
