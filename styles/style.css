@@ -2,22 +2,25 @@
 CSS for etch-a-sketch
 */
 #container{    
-    padding: 30px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 #btn{
-    margin-left: 50%;
-    margin-bottom: 30px;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 #flex{
     display: flex;
-    flex-wrap: wrap;
+    align-content:space-around;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 960px;
+    height: 960px;
 }
 .gridBox{
-    flex: 1, 1, 0;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 100px;
-    width: 100px;
-    background-color: aliceblue;
-    border: 2px solid rgb(128, 128, 128);
+    background-color: aliceblue;    
 }
