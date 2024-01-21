@@ -7,7 +7,6 @@ CSS for etch-a-sketch
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 #btn{
     width: -moz-fit-content;
