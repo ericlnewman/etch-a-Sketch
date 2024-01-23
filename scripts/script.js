@@ -11,15 +11,11 @@ btn.textContent = "Etch-a-Sketch Sqaures to add";
 container.appendChild(btn);
 container.appendChild(flexBox);
 btn.addEventListener("click", ()=>{
-    console.log("the button was pressed")
     const userInput = parseInt(prompt("How many squares would you like put in the Etch-a-Sketch?"));
     if(userInput > 100 || isNaN(userInput) || userInput == undefined){
         userInput = 16;
     }
-    console.log("and now it should execute the div function to refresh with the given number if the input is undefined");
-    console.log("the userInput is " + userInput);
     let number = userInput;
-    console.log("number is " + number + ` and thus dividing 960 by it is ${960/number}`);
     const doubleNumber = number * number;
     // clear the flexbox of previous elements:
     flexBox.innerHTML = "";
